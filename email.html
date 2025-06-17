@@ -4,58 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malicious Email Strategy | CATS</title>
-<link rel="stylesheet" href="style.css" />
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="topbar">
-  <h1>📧 Malicious Email Risk Management Strategy</h1>
-</header>
+  <header class="topbar">
+    <h1>Malicious Email Risk Management Strategy</h1>
+  </header>
 
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="#top">Top</a>
+    <a href="#bottom">End</a>
+    <a href="#" onclick="window.print()">PDF</a>
+  </div>
 
-  <main>
-      <a id="top"></a>
+<main>
+  <span id="top"></span>
 
-  <h2>Definition of BYOD and Associated Cyber Security Issues</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit, leo nec sagittis iaculis, erat sem vestibulum justo, sed vulputate metus lacus sit amet arcu. Fusce eleifend sodales diam, a tincidunt ipsum gravida ut. Curabitur et nisi ut ex luctus imperdiet. Pellentesque eget ex at lacus hendrerit dictum. Proin at mauris nisi. Quisque nec facilisis lorem. Suspendisse sed rhoncus lacus. Integer id enim ut eros pulvinar viverra in vitae erat.</p>
+  <h2>Definition of Malicious Email and Associated Cyber Security Issues</h2>
+  <p>
+    Malicious email is one of the most common and dangerous attack vectors used by cybercriminals to target individuals and organisations. At CATS, the use of email across staff and student networks presents ongoing risks such as phishing, spoofing, malware delivery, credential theft, and data breaches.
+  </p>
+  <p>
+    Attackers may disguise emails to look like trusted sources, prompting recipients to click malicious links, download infected attachments, or provide sensitive information. Common threats include invoice scams, credential harvesting portals, ransomware payloads, and impersonation of internal users or executives (CEO fraud).
+  </p>
+  <p>
+    If a user interacts with a malicious email, it can result in compromised accounts, unauthorised access to CATS systems, data leakage, or widespread malware infections. Because email is widely used across all CATS campuses and roles, it must be treated as a high-priority threat surface.
+  </p>
 
   <h2>Incident Response Plan</h2>
-  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer porttitor nulla in arcu dictum, a scelerisque arcu feugiat. Nam at lorem sed sem convallis semper. Pellentesque a tincidunt mi, non pulvinar elit. Morbi sollicitudin nibh justo, sed imperdiet leo ultricies sed. Vivamus pharetra est quis dolor lacinia, nec vehicula mi laoreet. Fusce vel malesuada nisi. Sed et quam nec orci finibus eleifend.</p>
+  <p>
+    The CATS incident response process for malicious emails begins with detection. Suspicious emails may be reported by users or flagged by the email security system. Once identified, all copies are quarantined, and threat indicators (e.g. domains, hashes) are extracted for further blocking.
+  </p>
+  <p>
+    If a user has interacted with a malicious message, their account is immediately investigated. Credentials may be revoked, and access to services like Microsoft 365 is temporarily suspended. Device scans are initiated via endpoint protection tools, and email logs are reviewed for spread.
+  </p>
+  <p>
+    High-risk incidents are escalated to the CISO and Privacy Officer. If personal data has been compromised, a Notifiable Data Breach (NDB) assessment is triggered. Lessons learned are recorded, and policies or filters may be updated.
+  </p>
 
   <h2>Responsibility and Escalation Roles</h2>
-  <p>Nam nec sem eget lorem gravida convallis. Vivamus lobortis justo ac purus euismod, et vestibulum ligula pharetra. Aenean in fermentum velit, nec scelerisque turpis. Sed viverra magna sit amet ligula lobortis faucibus. In ac turpis ligula. Donec vulputate tincidunt libero, nec ultrices sapien posuere at. Pellentesque finibus ligula nec sapien malesuada accumsan.</p>
+  <ul>
+    <li><strong>ICT Service Centre:</strong> First point of contact for email reports; responsible for triage and quarantine coordination.</li>
+    <li><strong>Cybersecurity Technician:</strong> Leads investigation of affected accounts and scans impacted systems.</li>
+    <li><strong>CISO:</strong> Assesses severity, authorises containment, and oversees communication or escalation.</li>
+    <li><strong>Privacy & Legal Officer:</strong> Evaluates privacy impact, determines NDB notification requirements, and liaises with OAIC if necessary.</li>
+  </ul>
 
   <h2>Recommended Security Technologies</h2>
-  <p>Aliquam erat volutpat. Praesent cursus urna sed neque egestas dapibus. Pellentesque a nunc ac elit consequat efficitur. Ut mattis placerat turpis non facilisis. Cras imperdiet nec metus nec dictum. Integer nec dui a lorem aliquam scelerisque sed id felis. Mauris vel semper sem. Curabitur id iaculis est.</p>
+  <ul>
+    <li><strong>Email Security Gateway:</strong> Filters spam, malware, and phishing emails before delivery.</li>
+    <li><strong>Attachment & URL Scanning:</strong> Analyzes links and documents in real time to detect threats.</li>
+    <li><strong>Multi-Factor Authentication (MFA):</strong> Mitigates account compromise even if credentials are leaked.</li>
+    <li><strong>DMARC/DKIM/SPF:</strong> Helps prevent spoofed emails from reaching staff or students.</li>
+    <li><strong>Threat Intelligence Integration:</strong> Automatically blocks known malicious IPs, URLs, and file hashes.</li>
+  </ul>
 
   <h2>Cyber Security Training Program</h2>
-  <p>In porta, lorem in tristique vulputate, sem purus tincidunt neque, vel rhoncus eros lorem sed est. Cras ultricies lectus eu lorem ultrices lacinia. Curabitur et malesuada erat. Integer in sapien viverra, porttitor leo et, viverra nunc. Proin placerat nec nulla non vulputate. Curabitur sit amet massa elit. Etiam vel faucibus velit, nec tincidunt massa.</p>
+  <p>
+    CATS delivers targeted training on email safety through onboarding, annual refreshers, and simulation campaigns. Phishing simulation results are tracked, and users who click are enrolled in follow-up training automatically.
+  </p>
+  <p>
+    Training focuses on recognising fake sender addresses, avoiding unsafe attachments, and reporting suspicious messages using the built-in “Report Phish” button. Posters, quick-tip cards, and newsletters reinforce safe habits.
+  </p>
 
   <h2>Risk Register / Feedback / Threat Categorisation</h2>
-  <p>Phasellus fringilla felis at dolor imperdiet, in lacinia libero commodo. Sed a sapien id sem vulputate volutpat. Curabitur eu luctus nulla, a congue risus. Nunc in felis justo. Suspendisse potenti. Nulla vitae convallis quam. Sed non est eu purus egestas tincidunt. Aenean scelerisque, nisi vitae vehicula vehicula, ligula leo convallis odio, sit amet aliquam odio sapien at erat.</p>
+<p>
+CATS maintains a dynamic email threat register as part of its overall cyber risk management framework. This register includes categories such as <strong>phishing</strong>, <strong>spoofing</strong>, <strong>malware distribution</strong>, <strong>unauthorised email access</strong>, and <strong>credential harvesting</strong>. Each category is mapped to known controls including email gateway filters, MFA policies, and targeted user education.
+</p>
+<p>
+Threats are classified by <em>source</em> (external actor, compromised internal account), <em>vector</em> (malicious link, attachment, spoofed domain), and <em>impact domain</em> (user accounts, sensitive data, financial fraud). Each incident entry is assigned a risk severity and likelihood rating, which is re-evaluated after incident closure.
+</p>
+<p>
+Feedback from users is encouraged and integrated into the response pipeline. A “Report Email Threat” function is embedded into all staff email clients. Reports are triaged by the ICT Service Centre and correlated with gateway logs and threat intelligence feeds. Recurrent or unblocked threats are escalated for policy tuning and control adjustment.
+</p>
+<p>
+To enhance precision, user feedback is categorised into common themes: false positives (ham marked as spam), misidentification of internal sources, and undetected phishing. This input supports adaptive threat modelling and improves training materials and filtering rule accuracy over time.
+</p>
 
-  <h2>Strategy Evaluation and Benchmarking</h2>
-  <p>Fusce iaculis felis justo, sed luctus neque tempor sed. Duis posuere libero in sapien tincidunt gravida. Nam faucibus lorem eget purus finibus porta. Cras mollis ligula et gravida faucibus. Sed congue magna sem, sed laoreet libero laoreet at. Suspendisse eu nisi id neque fringilla consequat. Vivamus convallis nisl velit, non vulputate erat gravida nec.</p>
+<h2>Strategy Evaluation and Benchmarking</h2>
+<ul>
+  <li><strong>Simulation Metrics:</strong> Regular phishing simulation campaigns measure susceptibility across campuses. Metrics include click rates, report rates, and delayed response times. Users with repeated failures are flagged for tailored retraining.</li>
+  <li><strong>Gateway Effectiveness:</strong> Weekly reporting tracks gateway performance — including blocked emails, quarantined content, and delivered threats. Any “misses” are manually reviewed and used to generate new detection rules.</li>
+  <li><strong>Credential Breach Monitoring:</strong> Compromised credentials detected through dark web monitoring or MFA failures are logged and linked to past email threats for impact analysis.</li>
+  <li><strong>External Benchmarking:</strong> CATS compares its email defence maturity to peer educational organisations using ACSC benchmarks and Essential Eight indicators — particularly around MFA enforcement, patching, and awareness maturity.</li>
+  <li><strong>Audits and Reviews:</strong> Internal email threat response processes are audited annually. In addition, third-party audits are conducted bi-annually to ensure adherence to the Information Security Manual (ISM) and Notifiable Data Breach (NDB) obligations.</li>
+</ul>
+<p>
+Key performance indicators (KPIs) tracked over time include the ratio of blocked vs delivered threats, average time to detect and quarantine phishing emails, and the percentage of users completing simulation remediation training. This data is visualised in internal dashboards used by the CISO team and ICT managers for ongoing benchmarking.
+</p>
 
-  <h2>Update Mechanism</h2>
-  <p>Nam nec velit non ex hendrerit vehicula. Etiam congue quam a sem dictum, sed malesuada lorem porta. In gravida vehicula eros ut congue. Morbi imperdiet lorem sed erat facilisis pretium. Suspendisse sed erat quam. Aliquam erat volutpat. Nullam tincidunt nibh nec risus vestibulum, id convallis leo tincidunt.</p>
-
-  <a id="bottom"></a>
-    
-    <button onclick="window.print()">🖨️ Print this page as PDF</button>
-
-    <a href="index.html">← Back to Main Page</a>
-
-    <div class="sidebar">
-  <a href="index.html">🏠 Home</a>
-  <a href="#top">🔝 Top</a>
-  <a href="#bottom">🔚 End</a>
-</div>
-
-<a id="top"></a>
-<a id="bottom"></a>
+<h2>Update Mechanism</h2>
+<p>
+The email strategy is reviewed quarterly by the CISO in consultation with cybersecurity, privacy, and ICT stakeholders. Updates may be triggered by internal events (e.g. simulation failures), external threat intelligence (e.g. ACSC alerts or CERT-AU advisories), or changes to compliance obligations such as APP 11 and the Notifiable Data Breach (NDB) scheme.
+</p>
+<p>
+Update procedures include version-controlled policy documentation, documented rationale for changes, and automated push alerts to affected users. Major changes (e.g. a new link scanning policy or DMARC enforcement shift) are announced via internal email bulletins and highlighted in mandatory training recaps.
+</p>
+<p>
+Changes to email filtering rules (e.g. new attachment types or spoof detection logic) are tested in a staging environment and pushed to production after validation. Logs from email gateways and user feedback are reviewed weekly for emerging false positive patterns or new bypass tactics. This ensures policy updates remain accurate and minimally disruptive.
+</p>
+<p>
+Where necessary, updates are accompanied by updated documentation in the Cybersecurity Governance Repository and signed change control records. This ensures traceability, audit readiness, and alignment with CATS' overall ICT security lifecycle.
+</p>
 
 
-  </main>
+  <span id="bottom"></span>
+</main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("a[href]");
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          if (!link.href.startsWith("#") && !link.target) {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = link.href;
+            }, 800);
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

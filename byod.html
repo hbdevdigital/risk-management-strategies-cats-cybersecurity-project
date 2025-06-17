@@ -4,58 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BYOD Strategy | CATS</title>
-<link rel="stylesheet" href="style.css" />
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
-  <h1>📱 BYOD Risk Management Strategy</h1>
-</header>
+    <h1>BYOD Strategy | CATS</h1>
+  </header>
 
+  
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="#top">Top</a>
+    <a href="#bottom">End</a>
+    <a href="#" onclick="window.print()">PDF</a>
+  </div>
 
   <main>
-      <a id="top"></a>
+    <span id="top"></span>
 
-  <h2>Definition of BYOD and Associated Cyber Security Issues</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit, leo nec sagittis iaculis, erat sem vestibulum justo, sed vulputate metus lacus sit amet arcu. Fusce eleifend sodales diam, a tincidunt ipsum gravida ut. Curabitur et nisi ut ex luctus imperdiet. Pellentesque eget ex at lacus hendrerit dictum. Proin at mauris nisi. Quisque nec facilisis lorem. Suspendisse sed rhoncus lacus. Integer id enim ut eros pulvinar viverra in vitae erat.</p>
+  
+<h1>Risk Management Strategy – Bring Your Own Device (BYOD)</h1>
 
-  <h2>Incident Response Plan</h2>
-  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer porttitor nulla in arcu dictum, a scelerisque arcu feugiat. Nam at lorem sed sem convallis semper. Pellentesque a tincidunt mi, non pulvinar elit. Morbi sollicitudin nibh justo, sed imperdiet leo ultricies sed. Vivamus pharetra est quis dolor lacinia, nec vehicula mi laoreet. Fusce vel malesuada nisi. Sed et quam nec orci finibus eleifend.</p>
+<h2>Definition of BYOD and Associated Cyber Security Issues</h2>
+<p>
+Bring Your Own Device (BYOD) refers to the practice of allowing staff, students, and contractors to connect personal devices—such as smartphones, tablets, and laptops—to the CATS network or systems. While this provides flexibility, increased productivity, and improved learning engagement, it introduces serious cybersecurity concerns.
+</p>
+<p>
+BYOD devices are often outside the direct control of IT, meaning they may not follow standard hardening procedures, encryption standards, or patching schedules. These unmanaged devices could bypass perimeter security, create shadow IT risks, or be used to exfiltrate data without detection.
+</p>
+<p>
+Cybersecurity threats from BYOD include the introduction of malware, unapproved cloud backups, unsecured public Wi-Fi usage, and inconsistent antivirus protection. Attackers may exploit these endpoints to launch broader attacks on internal systems or harvest credentials. Physical loss or theft of a personal device also exposes sensitive organisational data stored locally or accessed through cached sessions.
+</p>
+<p>
+For CATS, this threat landscape is particularly relevant due to its distributed campuses, varied user roles, and reliance on digital platforms like Microsoft 365. Security strategies must consider device diversity, behavioural factors, and access control, while remaining user-friendly to ensure adoption.
+</p>
 
-  <h2>Responsibility and Escalation Roles</h2>
-  <p>Nam nec sem eget lorem gravida convallis. Vivamus lobortis justo ac purus euismod, et vestibulum ligula pharetra. Aenean in fermentum velit, nec scelerisque turpis. Sed viverra magna sit amet ligula lobortis faucibus. In ac turpis ligula. Donec vulputate tincidunt libero, nec ultrices sapien posuere at. Pellentesque finibus ligula nec sapien malesuada accumsan.</p>
+<h2>Incident Response Plan</h2>
+<p>
+The BYOD incident response plan at CATS is structured to contain, investigate, and resolve security breaches swiftly while preserving organisational integrity and user trust. The process begins with multi-layered detection: real-time alerts from firewalls or NAC tools, anomaly-based behaviour detection, or user reports.
+</p>
+<p>
+Once an incident is confirmed, the affected device is immediately isolated from all networks using NAC policy enforcement or firewall rules. The user’s session is revoked, and access to organisational services like email, OneDrive, or learning platforms is disabled.
+</p>
+<p>
+The IT security team then performs a forensic analysis to identify the root cause—malware, unpatched OS, jailbroken/rooted status, or data leak vectors. Threat intelligence tools may be used to trace malicious IPs or domain connections, and log correlation is conducted to assess lateral movement.
+</p>
+<p>
+If sensitive data is believed to be compromised, the Legal and Privacy Officer is notified. A breach assessment is conducted under the NDB scheme, and notifications are prepared if serious harm is likely. Simultaneously, remediation is initiated: wiping the device (if enrolled in MDM), changing compromised credentials, and tightening user-specific permissions.
+</p>
+<p>
+A post-incident review is conducted, with logs preserved for legal or audit purposes. Any policy gaps are addressed and documented in the incident register.
+</p>
 
-  <h2>Recommended Security Technologies</h2>
-  <p>Aliquam erat volutpat. Praesent cursus urna sed neque egestas dapibus. Pellentesque a nunc ac elit consequat efficitur. Ut mattis placerat turpis non facilisis. Cras imperdiet nec metus nec dictum. Integer nec dui a lorem aliquam scelerisque sed id felis. Mauris vel semper sem. Curabitur id iaculis est.</p>
+<h2>Responsibility and Escalation Roles</h2>
+<ul>
+  <li><strong>ICT Service Centre:</strong> Receives initial incident reports, performs early triage, and applies basic containment using tools like device quarantine, session lockout, or user contact.</li>
+  <li><strong>Cybersecurity Lead Technician:</strong> Investigates the event using forensic tools, network logs, and device telemetry. Coordinates with service providers if third-party integrations are involved.</li>
+  <li><strong>CISO:</strong> Makes final decisions on breach classification, OAIC reporting, public communication, and resource allocation for follow-up containment.</li>
+  <li><strong>Legal and Privacy Officer:</strong> Assesses legal liability and ensures compliance with the Australian Privacy Principles (APP 11) regarding secure data handling.</li>
+  <li><strong>Campus Directors:</strong> Are notified if a BYOD breach affects large user groups or operational continuity, and may assist in communications or temporary access restrictions.</li>
+</ul>
 
-  <h2>Cyber Security Training Program</h2>
-  <p>In porta, lorem in tristique vulputate, sem purus tincidunt neque, vel rhoncus eros lorem sed est. Cras ultricies lectus eu lorem ultrices lacinia. Curabitur et malesuada erat. Integer in sapien viverra, porttitor leo et, viverra nunc. Proin placerat nec nulla non vulputate. Curabitur sit amet massa elit. Etiam vel faucibus velit, nec tincidunt massa.</p>
+<h2>Recommended Security Technologies</h2>
+<p>
+A layered security model is essential to securing BYOD environments. CATS deploys a combination of endpoint and network security tools to reduce attack surface. Enrolment in Mobile Device Management (MDM) allows device-level policy enforcement, such as encryption, biometric unlock, app control, and remote wipe.
+</p>
+<p>
+Network Access Control (NAC) segments personal devices from critical infrastructure using VLANs and context-aware access policies. Only compliant, patched, and registered devices are allowed internal access, with visitors and unmanaged endpoints restricted to isolated zones. Endpoint Detection and Response (EDR) agents provide real-time telemetry and post-breach remediation capabilities.
+</p>
+<p>
+VPN access is mandatory when connecting remotely to sensitive services, enforcing encryption in transit. Microsoft Defender for Endpoint protects devices by scanning downloads, websites, and scripts for malicious behaviour. Web filtering and DNS protection are layered on top to stop access to known bad domains.
+</p>
+<p>
+Multi-factor authentication (MFA) is enforced across all systems using conditional access rules, requiring a second layer of identity verification for logins, especially when coming from personal or unmanaged devices.
+</p>
 
-  <h2>Risk Register / Feedback / Threat Categorisation</h2>
-  <p>Phasellus fringilla felis at dolor imperdiet, in lacinia libero commodo. Sed a sapien id sem vulputate volutpat. Curabitur eu luctus nulla, a congue risus. Nunc in felis justo. Suspendisse potenti. Nulla vitae convallis quam. Sed non est eu purus egestas tincidunt. Aenean scelerisque, nisi vitae vehicula vehicula, ligula leo convallis odio, sit amet aliquam odio sapien at erat.</p>
+<h2>Cyber Security Training Program</h2>
+<p>
+CATS provides tailored training to equip users with the awareness necessary to safely operate in a BYOD environment. During onboarding, all users complete a security briefing that includes password hygiene, phishing recognition, safe browsing, and reporting procedures for suspicious activity.
+</p>
+<p>
+Annual refresher training covers evolving threats such as mobile banking Trojans, cloud service impersonation, QR code phishing, and app store scams. Interactive elements—like choosing safe vs. unsafe Wi-Fi networks or detecting fake apps—are embedded to encourage active learning.
+</p>
+<p>
+Specialised modules are available for high-risk users, such as staff with financial, HR, or IT admin access. These sessions emphasise risk ownership and digital professionalism. Posters and micro-training campaigns run quarterly across campuses, reinforcing key tips and providing updates on emerging risks.
+</p>
 
-  <h2>Strategy Evaluation and Benchmarking</h2>
-  <p>Fusce iaculis felis justo, sed luctus neque tempor sed. Duis posuere libero in sapien tincidunt gravida. Nam faucibus lorem eget purus finibus porta. Cras mollis ligula et gravida faucibus. Sed congue magna sem, sed laoreet libero laoreet at. Suspendisse eu nisi id neque fringilla consequat. Vivamus convallis nisl velit, non vulputate erat gravida nec.</p>
+<h2>Risk Register / Feedback / Threat Categorisation</h2>
+<p>
+CATS maintains a dynamic BYOD risk register, managed by the CISO’s office and reviewed quarterly. Risks are categorised by vector (e.g. malware, physical loss, app abuse), threat actor (internal vs external), and impact domain (reputation, data, financial).
+</p>
+<p>
+Each risk is assigned an inherent risk score and residual risk score post-control. Control effectiveness is periodically reviewed based on incident outcomes, simulated breaches, and user compliance data.
+</p>
+<p>
+Users can submit feedback anonymously through the portal regarding app restrictions, device registration issues, or emerging behaviours (e.g. students sideloading apps or using personal VPNs). These inputs inform policy tuning and threat modeling.
+</p>
 
-  <h2>Update Mechanism</h2>
-  <p>Nam nec velit non ex hendrerit vehicula. Etiam congue quam a sem dictum, sed malesuada lorem porta. In gravida vehicula eros ut congue. Morbi imperdiet lorem sed erat facilisis pretium. Suspendisse sed erat quam. Aliquam erat volutpat. Nullam tincidunt nibh nec risus vestibulum, id convallis leo tincidunt.</p>
+<h2>Strategy Evaluation and Benchmarking</h2>
+<ul>
+  <li><strong>Annual maturity review:</strong> The BYOD strategy is evaluated against ACSC's Essential Eight baseline, particularly for application control, patching, and account protection.</li>
+  <li><strong>KPI monitoring:</strong> Training engagement, number of non-compliant devices, policy violation rates, and incident detection-to-containment time are all tracked and visualised in internal dashboards.</li>
+  <li><strong>External audits:</strong> Third-party audits may be scheduled every 2 years to validate compliance, provide assurance to stakeholders, and improve governance posture.</li>
+  <li><strong>Peer benchmarking:</strong> IT leadership compares CATS' maturity with peer institutions to identify improvement areas, especially in shared-use device management or cross-campus enforcement.</li>
+</ul>
 
-  <a id="bottom"></a>
-    
-    <button onclick="window.print()">🖨️ Print this page as PDF</button>
+<h2>Update Mechanism</h2>
+<p>
+CATS has a formal review process for all cybersecurity strategies, including BYOD. The CISO oversees updates, which are triggered by annual reviews, incident learnings, legal or compliance changes, or emerging threat intelligence.
+</p>
+<p>
+All updates are version-controlled and recorded in the Cybersecurity Governance Document Repository. Staff and students are notified of material changes through internal news posts, alerts during system logins, and updated training modules. The ICT team holds a stakeholder consultation session before major changes, especially if they affect access workflows or personal device registration policies.
+</p>
 
-    <a href="index.html">← Back to Main Page</a>
-
-<div class="sidebar">
-  <a href="index.html">🏠 Home</a>
-  <a href="#top">🔝 Top</a>
-  <a href="#bottom">🔚 End</a>
-</div>
-
-<a id="top"></a>
-<a id="bottom"></a>
-
-
+    <span id="bottom"></span>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("a[href]");
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          if (!link.href.startsWith("#") && !link.target) {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = link.href;
+            }, 800);
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
